@@ -4,7 +4,7 @@ Diseño inicial de pantallas de proyecto de Aplicaciones Móviles para Android, 
 
 Utilizando Fragmentes, Shapes y Glide para incluir imágenes desde Internet 
 
-''''
+ ````
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="oval">
     <solid android:color="@color/white"/>
@@ -12,10 +12,9 @@ Utilizando Fragmentes, Shapes y Glide para incluir imágenes desde Internet
     </corners>
 
 </shape>
-''''
+ ````
 
-
-''''
+ ````
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
     <solid android:color="@color/white"/>
@@ -23,4 +22,4 @@ Utilizando Fragmentes, Shapes y Glide para incluir imágenes desde Internet
         android:topLeftRadius="50dp"/>
 
 </shape>
-''''
+````
