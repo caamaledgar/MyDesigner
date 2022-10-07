@@ -89,6 +89,77 @@ Modelo No. 3
 ![](https://github.com/caamaledgar/documentationPtojects/blob/main/MyDesigner/inicio3.png)
 
 
+El tratamiento de la imágen principal se realizó con la libreria Glide
+
+Paso 1
+En el archivo build.gradle de la app, se añade las dependencias de glide
+    
+````
+dependencies{
+    // Glide
+    implementation 'com.github.bumptech.glide:glide:4.14.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.14.0'
+}
+````
+
+Paso 2 
+Incluir en archivo AndroidManifiest.xml la funcionalidad para visualizar archivos desde Internet
+
+````
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET" />
+````
+
+Paso 3 
+Añadir la funcionalidad en nuestros fragments/activities para consumir imágenes desde una URL
+
+Para nuestro proyecto se crea una clase de utilerias Utils.java, dentro del paquete Utils, con el objetivo de poder utilizar esta funcinalidad desde cualquier fragmento.
+
+
+````
+package com.example.mydesigner.Utils;
+
+import android.view.View;
+import android.widget.ImageView;
+
+import com.bumptech.glide.Glide;
+import com.example.mydesigner.R;
+
+public class Utils {
+    public void imagenPrincipal(View view){
+        // Generar Imagen
+        String urlLogoPrincipal;
+        ImageView imageView = view.findViewById(R.id.imgLogo);
+        urlLogoPrincipal = "https://itchina.edu.mx/wp-content/uploads/2019/10/itchina-1.jpg";
+        //urlLogoPrincipal = "http://procesadordetex.wdfiles.com/local--files/nav:side/1395715081-logoChinaF.png";
+        //urlLogoPrincipal = "https://itchina.edu.mx/wp-content/themes/tecchina_ok/assets/files/main/img/pleca_tecnm.jpg";
+
+        Glide.with(view)
+                .load(urlLogoPrincipal)
+                .error(view.getContext().getDrawable(android.R.drawable.presence_offline))
+                .fitCenter()
+                .into(imageView);
+
+    }
+}
+````
+
+Como punto final,  mandaremos a llamar a la clase instanciandola en nuestos fragmentos
+
+````
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        Utils utils = new Utils();
+        utils.imagenPrincipal(view);
+    }
+    
+````
+
+
+
+
 
 
 
