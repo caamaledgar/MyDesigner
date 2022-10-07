@@ -32,18 +32,7 @@ Ejemplos de SHAPE
 
 ![](https://github.com/caamaledgar/documentationPtojects/blob/main/MyDesigner/rectangle_round.png)
 
-Con algunos diseños básicos de formas, se  pueden generar diseños agradables para los usuarios.
-
-Modelo No. 1
-![](https://github.com/caamaledgar/documentationPtojects/blob/main/MyDesigner/Inicio1.png)
-
-Modelo No. 2
-![](https://github.com/caamaledgar/documentationPtojects/blob/main/MyDesigner/inicio2.png)
-
-Modelo No. 3
-![](https://github.com/caamaledgar/documentationPtojects/blob/main/MyDesigner/inicio3.png)
-
-En nustros archivos XML se incluyen como un elemento imágen nuestras formas
+En nuestros archivos XML se incluyen como un elemento imágen nuestras formas
 
 ````
     <ImageView
@@ -65,6 +54,30 @@ El atributo que utilizará nuestra Shape es app:srcCompat
 ````
 app:srcCompat="@drawable/rectangle_round_bottom_left" />
 ````
+
+![](https://github.com/caamaledgar/documentationPtojects/blob/main/MyDesigner/disennoXML.png)
+
+
+Con algunos diseños básicos de formas, se  pueden generar diseños agradables para los usuarios.
+
+
+Modelo No. 1
+
+![](https://github.com/caamaledgar/documentationPtojects/blob/main/MyDesigner/Inicio1.png)
+
+
+Modelo No. 2
+
+![](https://github.com/caamaledgar/documentationPtojects/blob/main/MyDesigner/inicio2.png)
+
+
+Modelo No. 3
+
+![](https://github.com/caamaledgar/documentationPtojects/blob/main/MyDesigner/inicio3.png)
+
+
+
+
 
 
 
