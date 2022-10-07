@@ -72,29 +72,7 @@ app:srcCompat="@drawable/rectangle_round_bottom_left" />
 
 
 
-El tratamiento de la imágen principal se realizó con la libreria Glide
 
-Paso 1
-En el archivo build.gradle de la app, se añade las dependencias de glide
-    
-````
-dependencies{
-    // Glide
-    implementation 'com.github.bumptech.glide:glide:4.14.0'
-    annotationProcessor 'com.github.bumptech.glide:compiler:4.14.0'
-}
-````
-
-Paso 2 
-Incluir en archivo AndroidManifiest.xml la funcionalidad para visualizar archivos desde Internet
-
-````
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
-    <uses-permission android:name="android.permission.INTERNET" />
-````
-
-Paso 3
 Usar un estandar para el manejo de nuestros temas y colores
 
 Con la herramientoa de Google de Material Design [Color Tool](https://material.io/resources/color) podemos generar una plantilla de colores que integraremos a nuestro proyecto, sin ser expertos en diseño.
@@ -159,7 +137,32 @@ themes.xml (nigth)
 Esta configuración prepara nuestro proyecto Android para poder cambiar de manera dinamica los colores bajo un patron definido.
 
 
-Paso 4 
+
+El tratamiento de la imágen principal se realizó con la libreria Glide
+
+Paso 1
+En el archivo build.gradle de la app, se añade las dependencias de glide
+    
+````
+dependencies{
+    // Glide
+    implementation 'com.github.bumptech.glide:glide:4.14.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.14.0'
+}
+````
+
+Paso 2 
+Incluir en archivo AndroidManifiest.xml la funcionalidad para visualizar archivos desde Internet
+
+````
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET" />
+````
+
+
+
+Paso 3
 Añadir la funcionalidad en nuestros fragments/activities para consumir imágenes desde una URL
 
 Para nuestro proyecto se crea una clase de utilerias Utils.java, dentro del paquete Utils, con el objetivo de poder utilizar esta funcinalidad desde cualquier fragmento.
