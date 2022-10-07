@@ -71,23 +71,6 @@ app:srcCompat="@drawable/rectangle_round_bottom_left" />
 ![](https://github.com/caamaledgar/documentationProjects/blob/main/MyDesigner/disennoXML.png)
 
 
-Con algunos diseños básicos de formas, se  pueden generar diseños agradables para los usuarios.
-
-
-Modelo No. 1
-
-![](https://github.com/caamaledgar/documentationProjects/blob/main/MyDesigner/Inicio1.png)
-
-
-Modelo No. 2
-
-![](https://github.com/caamaledgar/documentationProjects/blob/main/MyDesigner/inicio2.png)
-
-
-Modelo No. 3
-
-![](https://github.com/caamaledgar/documentationProjects/blob/main/MyDesigner/inicio3.png)
-
 
 El tratamiento de la imágen principal se realizó con la libreria Glide
 
@@ -111,7 +94,72 @@ Incluir en archivo AndroidManifiest.xml la funcionalidad para visualizar archivo
     <uses-permission android:name="android.permission.INTERNET" />
 ````
 
-Paso 3 
+Paso 3
+Usar un estandar para el manejo de nuestros temas y colores
+
+Con la herramientoa de Google de Material Design [Color Tool](https://material.io/resources/color) podemos generar una plantilla de colores que integraremos a nuestro proyecto, sin ser expertos en diseño.
+
+![](https://github.com/caamaledgar/documentationProjects/blob/main/MyDesigner/colorToolMaterialDesign.png)
+
+En el boton Exportar, podremos generar los patrones basicos de los colores y los temas
+
+colors.xml
+````
+<resources>
+  <color name="primaryColor">#00bcd4</color>
+  <color name="primaryLightColor">#62efff</color>
+  <color name="primaryDarkColor">#008ba3</color>
+  <color name="secondaryColor">#311b92</color>
+  <color name="secondaryLightColor">#6746c3</color>
+  <color name="secondaryDarkColor">#000063</color>
+  <color name="primaryTextColor">#000000</color>
+  <color name="secondaryTextColor">#ffffff</color>
+  
+  <!-- Colores básicos que se incluyen para una gama de colores de utilidad -->
+    <color name="blueGray100">#CFD8DC</color>
+    <color name="gray200">#EEEEEE</color>
+    <color name="yellow200">#FFFF00</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>  
+</resources>
+
+themes.xml
+````
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MyDesigner" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="colorAccent">@color/secondaryColor</item>
+        <item name="colorSecondary">@color/secondaryColor</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorSecondaryVariant">@color/secondaryLightColor</item>
+    </style>
+</resources>
+````
+
+themes.xml (nigth)
+````
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MyDesigner" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="colorAccent">@color/secondaryColor</item>
+        <item name="colorSecondary">@color/secondaryColor</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSecondaryVariant">@color/secondaryLightColor</item>
+    </style>
+</resources>
+````
+Esta configuración prepara nuestro proyecto Android para poder cambiar de manera dinamica los colores bajo un patron definido.
+
+
+Paso 4 
 Añadir la funcionalidad en nuestros fragments/activities para consumir imágenes desde una URL
 
 Para nuestro proyecto se crea una clase de utilerias Utils.java, dentro del paquete Utils, con el objetivo de poder utilizar esta funcinalidad desde cualquier fragmento.
@@ -158,6 +206,24 @@ Como punto final,  mandaremos a llamar a la clase instanciandola en nuestos frag
 ````
 
 
+
+
+Con algunos diseños básicos de formas, se  pueden generar diseños agradables para los usuarios.
+
+
+Modelo No. 1
+
+![](https://github.com/caamaledgar/documentationProjects/blob/main/MyDesigner/Inicio1.png)
+
+
+Modelo No. 2
+
+![](https://github.com/caamaledgar/documentationProjects/blob/main/MyDesigner/inicio2.png)
+
+
+Modelo No. 3
+
+![](https://github.com/caamaledgar/documentationProjects/blob/main/MyDesigner/inicio3.png)
 
 
 
