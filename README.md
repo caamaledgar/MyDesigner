@@ -12,6 +12,7 @@ En la carpeta res/drawable, crear un Android Resouce File, El Resource File debe
 
 Ejemplos de SHAPE
 
+Círculo
  ````
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="oval">
@@ -20,12 +21,24 @@ Ejemplos de SHAPE
 </shape>
  ````
 
+Rectángulo con las esquinas superiores redondeadas
  ````
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
     <solid android:color="@color/white"/>
     <corners android:topRightRadius="50dp"
         android:topLeftRadius="50dp"/>
+
+</shape>
+````
+
+Rectángulo con las esquinas inferior izquierda redondeada
+````
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/white"/>
+    <corners android:bottomLeftRadius="100dp"
+        />
 
 </shape>
 ````
