@@ -4,7 +4,7 @@ Diseño inicial de pantallas de proyecto de Aplicaciones Móviles para Android, 
 
 Utilizando Fragmentes, Shapes y Glide para incluir imágenes desde Internet 
 
-##Paso 1
+**##Paso 1**
 En la carpeta res/drawable, crear un Android Resouce File, El Resource File debe ser de tipo Drawable
 
 ![](https://github.com/caamaledgar/documentationProjects/blob/main/MyDesigner/myshape.png)
@@ -72,7 +72,7 @@ app:srcCompat="@drawable/rectangle_round_bottom_left" />
 
 
 
-##Paso 2
+**##Paso 2**
 Usar un estandar para el manejo de nuestros temas y colores
 
 Con la herramiento de Google de Material Design [Color Tool](https://material.io/resources/color) podemos generar una plantilla de colores que integraremos a nuestro proyecto, sin ser expertos en diseño.
@@ -146,7 +146,7 @@ Esta configuración prepara nuestro proyecto Android para poder cambiar de maner
 
 El tratamiento de la imágen principal se realizó con la libreria Glide
 
-##Paso 3
+**##Paso 3**
 En el archivo build.gradle de la app, se añade las dependencias de glide
     
 ````
@@ -157,7 +157,7 @@ dependencies{
 }
 ````
 
-##Paso 4 
+**##Paso 4 **
 Incluir en archivo AndroidManifiest.xml la funcionalidad para visualizar archivos desde Internet
 
 ````
@@ -168,7 +168,7 @@ Incluir en archivo AndroidManifiest.xml la funcionalidad para visualizar archivo
 
 
 
-##Paso 5
+**##Paso 5**
 Añadir la funcionalidad en nuestros fragments/activities para consumir imágenes desde una URL
 
 Para nuestro proyecto se crea una clase de utilerias Utils.java, dentro del paquete Utils, con el objetivo de poder utilizar esta funcinalidad desde cualquier fragmento.
@@ -220,17 +220,17 @@ Como punto final,  mandaremos a llamar a la clase instanciandola en nuestos frag
 Con algunos diseños básicos de formas, se  pueden generar diseños agradables para los usuarios.
 
 
-##Modelo No. 1
+**Modelo No. 1**
 
 ![](https://github.com/caamaledgar/documentationProjects/blob/main/MyDesigner/Inicio1.png)
 
 
-##Modelo No. 2
+**Modelo No. 2**
 
 ![](https://github.com/caamaledgar/documentationProjects/blob/main/MyDesigner/inicio2.png)
 
 
-##Modelo No. 3
+**Modelo No. 3**
 
 ![](https://github.com/caamaledgar/documentationProjects/blob/main/MyDesigner/inicio3.png)
 
