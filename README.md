@@ -81,6 +81,7 @@ Con la herramientoa de Google de Material Design [Color Tool](https://material.i
 
 En el boton Exportar, podremos generar los patrones basicos de los colores y los temas
 
+
 colors.xml
 ````
 <resources>
@@ -100,8 +101,11 @@ colors.xml
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>  
 </resources>
+````
+
 
 themes.xml
+
 ````
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
@@ -134,6 +138,7 @@ themes.xml (nigth)
     </style>
 </resources>
 ````
+
 Esta configuración prepara nuestro proyecto Android para poder cambiar de manera dinamica los colores bajo un patron definido.
 
 
