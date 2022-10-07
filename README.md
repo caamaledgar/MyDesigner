@@ -7,6 +7,9 @@ Utilizando Fragmentes, Shapes y Glide para incluir imágenes desde Internet
 
 En la carpeta res/drawable, crear un Android Resouce File, El Resource File debe ser de tipo Drawable
 
+![](https://github.com/caamaledgar/documentationPtojects/blob/main/myshape.png)
+
+
 Ejemplos de SHAPE
 
  ````
