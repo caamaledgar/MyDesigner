@@ -7,7 +7,7 @@ Utilizando Fragmentes, Shapes y Glide para incluir imágenes desde Internet
 
 En la carpeta res/drawable, crear un Android Resouce File, El Resource File debe ser de tipo Drawable
 
-![](https://github.com/caamaledgar/documentationPtojects/blob/main/myshape.png)
+![](https://github.com/caamaledgar/documentationPtojects/blob/main/MyDesigner/myshape.png)
 
 
 Ejemplos de SHAPE
@@ -29,3 +29,47 @@ Ejemplos de SHAPE
 
 </shape>
 ````
+
+![](https://github.com/caamaledgar/documentationPtojects/blob/main/MyDesigner/rectangle_round.png)
+
+Con algunos diseños básicos de formas, se  pueden generar diseños agradables para los usuarios.
+
+Modelo No. 1
+![](https://github.com/caamaledgar/documentationPtojects/blob/main/MyDesigner/Inicio1.png)
+
+Modelo No. 2
+![](https://github.com/caamaledgar/documentationPtojects/blob/main/MyDesigner/inicio2.png)
+
+Modelo No. 3
+![](https://github.com/caamaledgar/documentationPtojects/blob/main/MyDesigner/inicio3.png)
+
+En nustros archivos XML se incluyen como un elemento imágen nuestras formas
+
+````
+    <ImageView
+        android:id="@+id/imgFondo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/rectangle_round_bottom_left" />
+````
+
+El atributo que utilizará nuestra Shape es app:srcCompat
+
+````
+app:srcCompat="@drawable/rectangle_round_bottom_left" />
+````
+
+
+
+
+
+
+
+
