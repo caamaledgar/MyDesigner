@@ -14,6 +14,8 @@ Utilizando Fragmentes, Shapes y Glide para incluir imágenes desde Internet
 </shape>
 
 
+
+
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
     <solid android:color="@color/white"/>
