@@ -73,13 +73,13 @@ app:srcCompat="@drawable/rectangle_round_bottom_left" />
 
 
 **##Paso 2**
-Usar un estandar para el manejo de nuestros temas y colores
+Usar un estándar para el manejo de nuestros temas y colores
 
-Con la herramiento de Google de Material Design [Color Tool](https://material.io/resources/color) podemos generar una plantilla de colores que integraremos a nuestro proyecto, sin ser expertos en diseño.
+Con la herramienta de Google de Material Design [Color Tool](https://material.io/resources/color) podemos generar una plantilla de colores que integraremos a nuestro proyecto, sin ser expertos en diseño.
 
 ![](https://github.com/caamaledgar/documentationProjects/blob/main/MyDesigner/colorToolMaterialDesign.png)
 
-En el boton Exportar, podremos generar los patrones basicos de los colores y los temas
+En el botón Exportar, podremos generar los patrones básicos de los colores y los temas
 
 
 colors.xml
