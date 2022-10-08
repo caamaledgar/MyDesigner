@@ -2,7 +2,7 @@
 
 Diseño inicial de pantallas de proyecto de Aplicaciones Móviles para Android, del Instituto Tecnólogico de Chiná, Campeche
 
-Utilizando Fragmentes, Shapes y Glide para incluir imágenes desde Internet 
+Utilizando Fragmentos, Shapes y Glide para incluir imágenes desde Internet 
 
 **##Paso 1**
 En la carpeta res/drawable, crear un Android Resouce File, El Resource File debe ser de tipo Drawable
