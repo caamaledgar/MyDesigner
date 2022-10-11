@@ -196,6 +196,7 @@ public class Utils {
         Glide.with(view)
                 .load(urlLogoPrincipal)
                 .error(view.getContext().getDrawable(android.R.drawable.presence_offline))
+                //.error(getApplicationContext().getDrawable(android.R.drawable.presence_offline)) Cuando se utiliza desde un Activity
                 .fitCenter()
                 .into(imageView);
 
