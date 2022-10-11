@@ -192,6 +192,7 @@ public class Utils {
         //urlLogoPrincipal = "http://procesadordetex.wdfiles.com/local--files/nav:side/1395715081-logoChinaF.png";
         //urlLogoPrincipal = "https://itchina.edu.mx/wp-content/themes/tecchina_ok/assets/files/main/img/pleca_tecnm.jpg";
 
+        // Glide.with(this) Cuando se utiliza desde un Activity
         Glide.with(view)
                 .load(urlLogoPrincipal)
                 .error(view.getContext().getDrawable(android.R.drawable.presence_offline))
