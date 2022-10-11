@@ -204,6 +204,17 @@ public class Utils {
 }
 ````
 
+Nota: Para utilizar Glide en un Activity 
+````
+        Glide.with(this)
+                .load(urlLogoPrincipal)
+                .error(getApplicationContext().getDrawable(android.R.drawable.presence_offline))
+                .fitCenter()
+                .into(imageView);
+
+````
+
+
 Como punto final,  mandaremos a llamar a la clase instanciandola en nuestos fragmentos
 
 ````
